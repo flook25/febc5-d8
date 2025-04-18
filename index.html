@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titleText" class="">Hello world</h1>
+    <div id="greetings">Hello flook 🐼</div>
+    <div id="result">
+        <h1 id="ff" class="">Hi peopel</h1>
+    </div>
+    <script>
+        function addElement() {
+            let newElement = document.createElement("p");
+            newElement.innerHTML = "Hello World";
+            let result = document.getElementById("result"); // Corrected id
+            result.appendChild(newElement);
+        }
+    </script>
+    <script src="script.js"></script>
+    <button id="ch">Hide</button>
+    <button onclick="addElement()">Add Element</button>
+</body>
+</html>
